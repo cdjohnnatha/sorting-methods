@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sortingmethods:
+    build: .
+    command: make run
+    volumes:
+      - .:/var/www/sorting_methods
+      - bundle-data:/var/www/bundle
+volumes:
+  bundle-data:
+    driver: local
