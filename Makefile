@@ -12,4 +12,4 @@ bash:
 	docker run -it sortingmethods_sortingmethods bash
 
 run_app:
-	 docker run sortingmethods_sortingmethods ruby 'bin/console'
+	 docker run -t sortingmethods_sortingmethods ruby 'bin/console'

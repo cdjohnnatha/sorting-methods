@@ -5,8 +5,12 @@ module Sorting
     class FileManipulation
       def create_array_by_file
         puts "File path to read and create an array by."
-        # fileName = gets.chomp
-        fileName = "data/inputs/couting.txt"
+        # fileName = "data/inputs/couting.txt"
+        fileName = gets.chomp
+
+        if fileName.nil?
+          fileName = "data/inputs/couting.txt"
+        end
         file_inputs = Array.new
         File.open(fileName) do |file|
           while line = file.gets
