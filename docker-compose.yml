@@ -3,7 +3,7 @@ version: '3'
 services:
   sortingmethods:
     build: .
-    command: make run
+    command: make run_app
     volumes:
       - .:/var/www/sorting_methods
       - bundle-data:/var/www/bundle

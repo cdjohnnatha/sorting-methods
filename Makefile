@@ -1,5 +1,15 @@
+DCMP = docker
+APP = sortingmethods_sortingmethods
+DCMP_EXEC_APP = ${DCMP} exec ${APP}
+DCMP_RUN_APP = ${DCMP} run ${APP}
+
+
 run:
-	bundle install 
+	bundle install
+	bash 'echo "gemspec" >> Gemfile'
 
 bash:
-	docker run -it ruby bash
+	docker run -it sortingmethods_sortingmethods bash
+
+run_app:
+	 docker run sortingmethods_sortingmethods ruby 'bin/console'
