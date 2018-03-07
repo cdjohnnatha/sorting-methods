@@ -1,35 +1,49 @@
 # Sorting::Methods
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sorting/methods`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to sorting methods. Here can be find some of sort methods execution describe bellow:
 
-TODO: Delete this and the text above, and describe your gem
+* Insertion Sort
+* Selection Sort
+
+## Requirements
+
+* **[Docker 18.02.0-ce-rc1](https://www.ruby-lang.org/en/)**
+* **[docker-compose 1.11.2](https://docs.docker.com/compose/)**
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1. After clone project, in folder exec the command to create docker images containing the necessary for app execution:
 
-```ruby
-gem 'sorting-methods'
+```
+docker-compose up
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sorting-methods
 
 ## Usage
 
-TODO: Write usage instructions here
+To use sort methods you **MUST** pass a path of a file which **MUST HAVE a sequence of numbers splitted by jump line**. When you start the application using the command run_app, it will wait a path of file.
+ 
+ **OBS:** In the path **data/inputs** you can find a file named "counting.txt" used to test the application but, there have a directory which have other input files. 
+ 
+ Example:
+ 
+ "data/inputs/couting.txt"
 
-## Development
+* Makefile commands:
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To run application:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+make run_app
+```
+
+To use Ruby bash of project
+
+```
+make bash
+```
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sorting-methods.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[cdjohnnatha]/sorting-methods.
