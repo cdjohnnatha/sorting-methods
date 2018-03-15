@@ -14,12 +14,12 @@ module Sorting
   quick_sort = Method::QuickSort.new
 
   print "Messy Array:\n #{messy_array}\n"
-  # sorting.insertion_sort(messy_array)
-  # sorting.selection_sort(messy_array)
-  # merge_sort = merge_sort.sort(messy_array)
-  # print "\n\nMerge Sort Algorithm\n\n #{merge_sort}"
+  sorting.insertion_sort(messy_array)
+  sorting.selection_sort(messy_array)
+  merge_sort = merge_sort.sort(messy_array)
+  print "\n\nMerge Sort Algorithm\n #{merge_sort}"
   
   quick_sort = quick_sort.sort(messy_array)
-  print "Quick sort #{quick_sort}"
+  print "\n\nQuick Sort Algorithm\n #{quick_sort}"
 
 end
