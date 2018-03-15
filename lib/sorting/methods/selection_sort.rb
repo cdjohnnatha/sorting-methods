@@ -2,29 +2,9 @@
 
 module Sorting
   module Method
-    class Sorting
-      
-      def insertion_sort(arr)
-        sorted_array = arr.clone
-        count = 1
+    class SelectionSort
 
-        while count < sorted_array.length
-          header = arr[count]
-          inverted_count = count - 1
-
-          while (sorted_array[inverted_count] > header) && (inverted_count >= 0)
-            sorted_array[inverted_count + 1] = sorted_array[inverted_count]
-            inverted_count -= 1
-          end
-
-          sorted_array[inverted_count + 1] = header
-          count += 1
-        end
-
-        print "\nInsertion Sort: \n\n#{sorted_array}"
-      end
-
-      def selection_sort(arr)
+      def sort(arr)
         sorted_array = arr.clone
         smallest_value = 0
         smallest_index = 0
@@ -48,7 +28,7 @@ module Sorting
           position += 1 
         end
 
-        print "\n\nSelection Sort: \n\n#{sorted_array}"
+        return sorted_array
       end
     end
   end

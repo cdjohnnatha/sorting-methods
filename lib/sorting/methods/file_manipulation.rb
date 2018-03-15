@@ -5,7 +5,7 @@ module Sorting
     class FileManipulation
       def create_array_by_file
         puts "File path to read and create an array by."
-        # fileName = "data/inputs/couting.in"
+        # fileName = "data/inputs/couting.txt"
         fileName = gets.chomp
 
         if fileName.nil?
