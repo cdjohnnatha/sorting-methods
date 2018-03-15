@@ -25,7 +25,6 @@ module Sorting
         return file_inputs
 
       rescue Exception => msg
-        puts msg
       end
     end
   end
