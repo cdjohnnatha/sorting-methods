@@ -6,6 +6,10 @@ Welcome to sorting methods. Here can be find some of sort methods execution desc
 * Selection Sort
 * Merge Sort
 * Quick Sort
+* Max Heap
+* Heap Sort
+* Couting Sort
+* Radix Sort
 
 ## Requirements
 
