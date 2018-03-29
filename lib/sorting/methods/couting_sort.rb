@@ -5,9 +5,10 @@ module Sorting
     class CoutingSort
       attr_accessor :arr
 
-      def sort(arr)
+      def sort(arr, biggest=nil)
         @arr = arr.clone
-        biggest = @arr.max
+        biggest = @arr.max if biggest == nil
+
         sorted = Array.new(arr.length - 1, 0)
         aux_arr = Array.new(biggest + 1, 0)
 
@@ -22,7 +23,7 @@ module Sorting
           sorted[aux_arr[element]] = element
         end
 
-        puts sorted
+        return sorted
       end
     end
   end
