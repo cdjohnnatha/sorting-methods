@@ -3,14 +3,13 @@
 module Sorting
   module Method
     class MergeSort
-
       def sort(arr)
         if arr.length <= 1
           return arr
         end
         # split array
-        
-        middle = (arr.length/2).round
+
+        middle = (arr.length / 2).round
         first_half = sort arr.slice(0, middle)
         last_half = sort arr.slice(middle, arr.length)
 
@@ -18,7 +17,6 @@ module Sorting
       end
 
       def merge(first_half, last_half)
-        
         arr = Array.new
 
         offset_a = 0
@@ -28,12 +26,12 @@ module Sorting
           b = last_half[offset_b]
           if a <= b
             arr.push(a)
-            offset_a += 1 
+            offset_a += 1
           else
             arr.push(b)
             offset_b += 1
           end
-        end 
+        end
 
         # Check if have a last element in both sides
         while offset_a < first_half.length

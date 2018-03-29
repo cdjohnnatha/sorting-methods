@@ -3,13 +3,12 @@
 module Sorting
   module Method
     class QuickSort
-
-      def sort(arr, from=0, to=nil)
+      def sort(arr, from = 0, to = nil)
         to = arr.length - 1 if to == nil
         return arr if from >= to
 
         pivot = from
-        (pivot+1..to).each do |idx|
+        (pivot + 1..to).each do |idx|
           if arr[idx] < arr[pivot]
             temp = arr[idx]
             arr[pivot + 1] = arr[pivot]
@@ -18,8 +17,8 @@ module Sorting
           end
         end
 
-        sort(arr, from, pivot-1)
-        sort(arr, pivot+1, to)
+        sort(arr, from, pivot - 1)
+        sort(arr, pivot + 1, to)
 
         return arr
       end

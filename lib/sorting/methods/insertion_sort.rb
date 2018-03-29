@@ -3,7 +3,6 @@
 module Sorting
   module Method
     class InsertionSort
-      
       def sort(arr)
         sorted_array = arr.clone
         count = 1

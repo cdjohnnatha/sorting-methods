@@ -3,7 +3,6 @@
 module Sorting
   module Method
     class SelectionSort
-
       def sort(arr)
         sorted_array = arr.clone
         smallest_value = 0
@@ -25,7 +24,7 @@ module Sorting
 
           sorted_array[smallest_index] = sorted_array[position]
           sorted_array[position] = smallest_value
-          position += 1 
+          position += 1
         end
 
         return sorted_array
